@@ -1,14 +1,11 @@
 class Player
 
-attr_reader :name, :HP
+  attr_reader :name
+  attr_accessor :HP
 
-def initialize(name)
-  @name = name
-  @HP = 100
-end
-
-def attack
-  @HP -= 10
-end
+  def initialize(name)
+    @name = name
+    @HP = 100
+  end
 
 end
